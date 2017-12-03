@@ -12,10 +12,10 @@ class CharArrayOps {
      
         while(valid_chars < buffSize) {
             try {
-				c = System.in.read();
-			} catch (IOException e) {
-				c = 'X'; // like .. Xception ...
-			}
+                c = System.in.read();
+            } catch (IOException e) {
+                c = 'X'; // like .. Xception ...
+            }
             if (c != '\r' && c != '\n')  
                 buff[valid_chars++] = c;
             else
@@ -221,21 +221,21 @@ class OtherMethod {
     
     // use selection sort to sort the list
     static int[][] sortKeyList(int[][] array) {
-		for (int i = 0; i < array.length - 1; i++) {
-			for (int j = i + 1; j < array.length; j++) {
-				if (array[i][0] > array[j][0]) {
-					int temp = array[i][0];
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i][0] > array[j][0]) {
+                    int temp = array[i][0];
                     int temp2 = array[i][1];
-					array[i][0] = array[j][0];
+                    array[i][0] = array[j][0];
                     array[i][1] = array[j][1];
-					array[j][0] = temp;
+                    array[j][0] = temp;
                     array[j][1] = temp2;
-				}
-			}
-		}
+                }
+            }
+        }
 
-		return array;
-	}
+        return array;
+    }
     
     static int[] calc_Inv_key(int[] key) {
         int alpha_size = key.length;
@@ -295,9 +295,9 @@ class Crypto_Tests {
         for ( int i = 0; i < digits_to_read; i++ ) {
             
             try {
-				stelle_char = (char)System.in.read();
-			} catch (IOException e) {
-			}
+                stelle_char = (char)System.in.read();
+            } catch (IOException e) {
+            }
             do {
                 
                     if( stelle_char >= '0' && stelle_char <= '9') 
@@ -447,8 +447,8 @@ class XOR_Crypt {
 public class CharArrayManipulation_Func  {
 
     public static void main(String[] args) throws Exception {
-    	boolean TEST_ARRAYOPS = false;
-    	if( TEST_ARRAYOPS ) {
+        boolean TEST_ARRAYOPS = false;
+        if( TEST_ARRAYOPS ) {
         System.out.println("Geben Sie eine Zeichenfolge ein und bestaetigen Sie ihre Eingabe mit Enter:");
    
         int[] str = CharArrayOps.readArray(); 
@@ -535,8 +535,8 @@ public class CharArrayManipulation_Func  {
         System.in.read(); 
         System.in.read(); 
         
-    	}
-    	
+        }
+        
         boolean TEST_HIDEINFO = false;
         
         if( TEST_HIDEINFO ) {
